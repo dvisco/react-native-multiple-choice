@@ -8,7 +8,8 @@ import {
   TouchableOpacity,
   View,
   Image,
-  ListView
+  ListView,
+  ViewPropTypes
 } from 'react-native';
 
 import BaseComponent from './BaseComponent'
@@ -23,9 +24,9 @@ const propTypes = {
     renderSeparator: PropTypes.func,
     renderRow: PropTypes.func,
     renderText: PropTypes.func,
-    style: View.propTypes.style,
-    optionStyle: View.propTypes.style,
-    optionTextStyle: View.propTypes.style,
+    style: ViewPropTypes.style,
+    optionStyle: ViewPropTypes.style,
+    optionTextStyle: ViewPropTypes.style,
     disabled: PropTypes.bool
 };
 const defaultProps = {
